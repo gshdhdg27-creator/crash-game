@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Crash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand">CRASH</div>
+      <div class="balance-wrap">
+        <span class="label">Баланс</span>
+        <span id="balance" class="balance">1000.00</span>
+      </div>
+    </header>
+
+    <section class="stage">
+      <div id="phase-banner" class="phase betting">СТАВКИ · 10</div>
+      <div class="mult-wrap">
+        <div id="mult" class="mult">1.00×</div>
+        <div id="status" class="status">Сделайте ставку</div>
+      </div>
+      <canvas id="canvas" width="800" height="420"></canvas>
+      <div id="history" class="history"></div>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <label>Ставка</label>
+        <div class="bet-controls">
+          <button type="button" class="chip" data-bet="10">10</button>
+          <button type="button" class="chip" data-bet="25">25</button>
+          <button type="button" class="chip" data-bet="50">50</button>
+          <button type="button" class="chip" data-bet="100">100</button>
+          <input id="bet-input" type="number" min="1" step="1" value="25" />
+        </div>
+      </div>
+      <div class="row actions">
+        <button id="btn-bet" type="button" class="btn primary">Поставить</button>
+        <button id="btn-cashout" type="button" class="btn cashout" disabled>Забрать</button>
+      </div>
+      <p class="hint">Раунды идут без остановки. Перед каждым полётом — <b>10 секунд</b> на ставку. Баланс виртуальный.</p>
+    </section>
+  </div>
+  <canvas id="confetti" class="confetti"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
