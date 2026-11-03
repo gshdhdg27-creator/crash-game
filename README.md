@@ -1,20 +1,3 @@
-# Crash Game
+This repository was created by mistake.
 
-Мини-игра Crash с **непрерывными раундами** и **10 секундами** на ставку перед каждым полётом.
-
-## Как работает
-
-1. **10 сек** — окно ставок (`СТАВКИ · N`)
-2. Полёт множителя (плавный рост)
-3. Crash → пауза ~2 сек → снова 10 сек на ставку
-4. Раунды **не останавливаются**
-
-Баланс **виртуальный** (localStorage), не реальные деньги.
-
-## Запуск
-
-Открой `index.html` в браузере или задеплой на Vercel (Root = `.`).
-
-```bash
-npx serve .
-```
+You can delete it: GitHub → Settings → Danger Zone → Delete this repository.
